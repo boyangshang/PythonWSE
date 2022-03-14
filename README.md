@@ -11,7 +11,7 @@ It can be installed using the following cammand from terminal:
 python setup.py install
 ```
 
-USAGE
+Usage
 ---------------
 One can use this wrapper in Python 3 as follows. 
 
@@ -32,7 +32,7 @@ sample_wse = myWSE.py_myWSE(data, nmax)
 ```
 
 
-NOTES
+Notes
 ---------------
 To use this wrapper for dimensions other than 2 or 10, the file 'myWSE.pyx' needs to be modified. I will take dimension = 20 as an example here.
 
