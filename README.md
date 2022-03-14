@@ -1,6 +1,6 @@
 # PythonWSE
 
-This is a python wrapper of the Weighted Sample Elinmination method proposed by Cem Yuksel. 
+This is a python wrapper of the Weighted Sample Elinmination method proposed by Cem Yuksel ([[1]](#1)). 
 
 Installation
 ---------------
@@ -13,7 +13,7 @@ python setup.py install
 
 USAGE
 ---------------
-Then one can use this wrapper in Python 3 as follows. 
+One can use this wrapper in Python 3 as follows. 
 
 ```python
 import myWSE
@@ -43,7 +43,12 @@ To use this wrapper for dimensions other than 2 or 10, the file 'myWSE.pyx' need
 
 - Add the following after line 43:
 ```python
-elif dim == 20:
-    myWSE_20D(inputPoints, N, <double*>sample_c.data, n)
+    elif dim == 20:
+        myWSE_20D(inputPoints, N, <double*>sample_c.data, n)
 ```
 
+## References
+<a id="1">[1]</a> 
+Yuksel, C (2015). 
+Sample Elimination for Generating Poisson Disk Sample Sets. 
+Computer Graphics Forum (Proceedings of EUROGRAPHICS 2015), 34, 2, 2015
