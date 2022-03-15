@@ -8,7 +8,7 @@ setup(
       ext_modules=[
                    Extension('myWSE',
                              sources=['myWSE.pyx'],
-                             extra_compile_args=['-stdlib=libc++','-std=c++11'],
+                             extra_compile_args=['-std=c++11'],
                              language='c++',include_dirs=[numpy.get_include()])
                    ],
       cmdclass = {'build_ext': build_ext}
