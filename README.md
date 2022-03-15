@@ -17,10 +17,12 @@ Usage
 One can use this wrapper in Python 3 as follows. 
 
 ```python
+import sys
+sys.path.insert(0,'/Your Path to the Package Folder/PythonWSE/')
 import myWSE
-
-##to generate synthetic data for this example
 import numpy as np
+
+##generating synthetic data for this example
 N = 10**4
 dimension = 2
 data = np.random.normal(0, 1.0, size = (N,dimension))
