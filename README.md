@@ -8,7 +8,8 @@ Installation
 It can be installed using the following cammand from terminal:
 
 ```
-python setup.py install
+cd PythonWSE
+python setup.py build_ext --inplace
 ```
 
 Usage
